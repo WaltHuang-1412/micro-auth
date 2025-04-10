@@ -5,14 +5,13 @@ import Register from "./pages/Register";
 import GlobalStyle from "./components/GlobalStyle/index";
 
 export default function Root() {
+  const isProd = location.pathname.startsWith("/micro-root");
+  const basePath = isProd ? "/micro-root/auth" : "/auth";
+
   return (
     <>
       <GlobalStyle />
-      <BrowserRouter
-        basename={
-          process.env.NODE_ENV === "production" ? "/micro-root/auth" : "/auth"
-        }
-      >
+      <BrowserRouter basename={basePath}>
         <Routes>
           <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/login" element={<Login />} />
