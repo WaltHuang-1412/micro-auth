@@ -17,7 +17,10 @@ const Login = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    window.location.href = "/sub"; // ✅ 導向 root 應用的 /sub
+    const basePrefix = location.pathname.startsWith("/micro-root")
+      ? "/micro-root"
+      : "";
+    window.location.href = `${basePrefix}/sub`;
   };
 
   return (
