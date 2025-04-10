@@ -12,8 +12,7 @@
     "test": "cross-env BABEL_ENV=test jest",
     "watch-tests": "cross-env BABEL_ENV=test jest --watch",
     "prepare": "husky install",
-    "coverage": "cross-env BABEL_ENV=test jest --coverage",
-    "build:types": "tsc"
+    "coverage": "cross-env BABEL_ENV=test jest --coverage"
   },
   "devDependencies": {
     "@babel/core": "^7.23.3",
@@ -60,7 +59,7 @@
     "@types/webpack-env": "^1.16.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-router-dom": "^7.5.0",
+    "react-router-dom": "^7.4.4",
     "sass": "^1.86.3",
     "single-spa": "6.0.3",
     "single-spa-react": "^6.0.2"
