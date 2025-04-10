@@ -8,7 +8,11 @@ export default function Root() {
   return (
     <>
       <GlobalStyle />
-      <BrowserRouter basename="/auth">
+      <BrowserRouter
+        basename={
+          process.env.NODE_ENV === "production" ? "/micro-root/auth" : "/"
+        }
+      >
         <Routes>
           <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/login" element={<Login />} />
