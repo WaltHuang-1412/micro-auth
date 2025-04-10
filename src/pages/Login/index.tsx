@@ -16,6 +16,7 @@ const Login = () => {
   // 模擬登入提交
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
     window.location.href = "/sub"; // ✅ 導向 root 應用的 /sub
   };
 
