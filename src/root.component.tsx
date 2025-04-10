@@ -10,7 +10,7 @@ export default function Root() {
       <GlobalStyle />
       <BrowserRouter
         basename={
-          process.env.NODE_ENV === "production" ? "/micro-root/auth" : "/"
+          process.env.NODE_ENV === "production" ? "/micro-root/auth" : "/auth"
         }
       >
         <Routes>
