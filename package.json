@@ -28,6 +28,7 @@
     "babel-jest": "^27.5.1",
     "concurrently": "^6.2.1",
     "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-ts-react-important-stuff": "^3.0.0",
@@ -38,6 +39,8 @@
     "jest-cli": "^27.5.1",
     "prettier": "^2.3.2",
     "pretty-quick": "^3.1.1",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
     "ts-config-single-spa": "^3.0.0",
     "typescript": "^4.3.5",
     "webpack": "^5.89.0",
@@ -47,6 +50,9 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.0.2",
     "@types/jest": "^27.0.1",
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
@@ -55,6 +61,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "^7.5.0",
+    "sass": "^1.86.3",
     "single-spa": "6.0.3",
     "single-spa-react": "^6.0.2"
   },
