@@ -13,10 +13,15 @@ import { motion } from "framer-motion";
 
 const Login = () => {
   const navigate = useNavigate();
-
+  const withBase = (path: string): string => {
+    const base = location.pathname.startsWith("/micro-root")
+      ? "/micro-root"
+      : "";
+    return `${base}${path}`;
+  };
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    window.location.href = "/sub"; // ✅ 登入後導向主內容
+    window.location.href = withBase("/sub"); // ✅ 登入後導向主內容
   };
 
   return (
