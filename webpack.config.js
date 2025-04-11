@@ -23,5 +23,11 @@ module.exports = (webpackConfigEnv, argv) => {
         },
       ],
     },
+    devServer: {
+      host: "0.0.0.0", // ✅ 設定固定 IP
+      port: 8082, // ✅ 依你的 micro-auth 使用的 port 調整
+      historyApiFallback: true,
+      hot: true,
+    },
   });
 };
