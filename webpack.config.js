@@ -15,7 +15,14 @@ module.exports = (webpackConfigEnv, argv) => {
       rules: [
         {
           test: /\.scss$/,
-          use: ["style-loader", "css-loader", "sass-loader"],
+          use: [
+            "style-loader",
+            {
+              loader: "css-loader",
+              options: { importLoaders: 1 },
+            },
+            "sass-loader",
+          ],
         },
         {
           test: /\.css$/,
@@ -24,10 +31,13 @@ module.exports = (webpackConfigEnv, argv) => {
       ],
     },
     devServer: {
-      host: "0.0.0.0", // ✅ 設定固定 IP
-      port: 8082, // ✅ 依你的 micro-auth 使用的 port 調整
+      host: "0.0.0.0",
+      port: 8082,
       historyApiFallback: true,
       hot: true,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
     },
   });
 };

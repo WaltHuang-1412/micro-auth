@@ -51,19 +51,23 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@hookform/resolvers": "^5.0.1",
     "@mui/material": "^7.0.2",
     "@types/jest": "^27.0.1",
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
+    "axios": "^1.8.4",
     "framer-motion": "^12.6.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.55.0",
     "react-router-dom": "^7.4.4",
     "sass": "^1.86.3",
     "single-spa": "6.0.3",
-    "single-spa-react": "^6.0.2"
+    "single-spa-react": "^6.0.2",
+    "yup": "^1.6.1"
   },
   "types": "dist/vue-micro-auth.d.ts"
 }
