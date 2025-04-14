@@ -2,7 +2,7 @@ import axios from "axios";
 import HttpsStatusCode from "./http-status-code";
 const isProd = location.pathname.startsWith("/micro-root");
 const instance = axios.create({
-  baseURL: isProd ? "https://35.236.134.249:8088/api/v1" : "/api/v1",
+  baseURL: isProd ? "https://api.hex-studio.net/api/v1" : "/api/v1",
   withCredentials: true, // 若使用 cookie 登入請保留
   timeout: 10000,
 });
